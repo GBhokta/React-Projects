@@ -113,7 +113,7 @@ body {
 ================================ */
 .page {
   min-height: 100vh;
-  display: flex;
+  /* display: flex; */
 }
 
 
@@ -465,6 +465,10 @@ footer {
     font-size: 1.125rem;
     line-height: 1.75rem;
     color: var(--color-text-secondary);
+}
+
+.py-2{
+    padding-block: var(--space-3);
 }
 /* ================================
    END OF BASE DESIGN SYSTEM
