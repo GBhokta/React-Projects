@@ -1,10 +1,6 @@
-import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
-export default function Navbar() {
-  const [active, setActive] = useState("Home");
-
-  const links = ["Home", "Projects", "About"];
-
+export default function Navbar({ darkMode, setDarkMode }) {
   return (
     <header className="navbar">
       <div className="container nav-inner">
@@ -12,17 +8,17 @@ export default function Navbar() {
         <div className="nav-brand">Dashboard</div>
 
         <nav className="nav-links">
-          {links.map((link) => (
-            <a
-              key={link}
-              href="#"
-              className={active === link ? "active" : ""}
-              onClick={() => setActive(link)}
-            >
-              {link}
-            </a>
-          ))}
+          <NavLink to="/" end>Home</NavLink>
+          <NavLink to="/projects">Projects</NavLink>
+          <NavLink to="/about">About</NavLink>
         </nav>
+
+        <button
+          className="btn-primary"
+          onClick={() => setDarkMode(!darkMode)}
+        >
+          {darkMode ? "Light" : "Dark"}
+        </button>
 
       </div>
     </header>

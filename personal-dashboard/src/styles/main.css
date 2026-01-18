@@ -83,6 +83,30 @@
 --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.06);
 
 
+
+
+/* ================================
+   DARK THEME
+================================ */
+.theme-dark {
+  --color-bg: #0f172a;
+  --color-surface: #111827;
+  --color-border: #1f2933;
+
+  --color-text-primary: #e5e7eb;
+  --color-text-secondary: #cbd5f5;
+  --color-text-muted: #94a3b8;
+
+  --color-primary: #60a5fa;
+  --color-primary-hover: #3b82f6;
+  --color-primary-soft: #1e293b;
+
+  --color-success: #4ade80;
+  --color-warning: #fbbf24;
+  --color-error: #f87171;
+}
+
+
 }
 
 
